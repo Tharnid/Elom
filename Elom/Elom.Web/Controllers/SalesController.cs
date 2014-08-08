@@ -93,5 +93,21 @@ namespace Elom.Web.Controllers
             }
             base.Dispose(disposing);
         }
+
+        public JsonResult Save(SalesOrderViewModel salesOrderViewModel)
+        {
+            SalesOrder salesOrder = new SalesOrder();
+
+            salesOrder.CustomerName = salesOrderViewModel.CustomerName;
+            salesOrder.PONumber = salesOrderViewModel.PONumber;
+
+            _salesContext.SalesOrders.Add(salesOrder);
+            _salesContext.SaveChanges();
+
+            salesOrderViewModel.MessageToClient = string.Format("{0}'s sales order has been added to the db!!!",
+                salesOrder.CustomerName);
+
+            return Json(new { salesOrderViewModel });  // mind blew up here
+        }
     }
 }

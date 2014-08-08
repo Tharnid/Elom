@@ -9,7 +9,8 @@
             data: ko.toJSON(self),
             contentType: "application/json",
             success: function (data) {
-
+                if(data.SalesOrderViewModel != null) // map only if present
+                    ko.mapping.fromJS(data.SalesOrderViewModel, {}, self);
             }
         });
     }
