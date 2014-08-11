@@ -107,7 +107,7 @@ namespace Elom.Web.Controllers
             salesOrderViewModel.MessageToClient = string.Format("{0}'s sales order has been added to the db!!!",
                 salesOrder.CustomerName);
 
-            return Json(new { salesOrderViewModel });  // mind blew up here
+            return Json(new { salesOrderViewModel });  
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30110.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elom.Web", "Elom.Web\Elom.Web.csproj", "{15E63C5E-8329-4FC2-80EB-7AF8A8BA2E7D}"
 EndProject
@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7E0A4A
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fal.DataLayer", "DataLayer.Fal\Fal.DataLayer.csproj", "{38F66BB4-074D-4DF4-B746-FB78B5B1E35E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fal.Model", "Fal.Model\Fal.Model.csproj", "{B29CEA50-F41D-45B3-8F4A-4F684DD24F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fal.Web", "Fal.Web\Fal.Web.csproj", "{8457FB06-C796-431E-A510-B32FB82ED393}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +40,18 @@ Global
 		{F0075E75-5686-4039-9089-B7154D700DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0075E75-5686-4039-9089-B7154D700DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0075E75-5686-4039-9089-B7154D700DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38F66BB4-074D-4DF4-B746-FB78B5B1E35E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38F66BB4-074D-4DF4-B746-FB78B5B1E35E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38F66BB4-074D-4DF4-B746-FB78B5B1E35E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38F66BB4-074D-4DF4-B746-FB78B5B1E35E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29CEA50-F41D-45B3-8F4A-4F684DD24F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29CEA50-F41D-45B3-8F4A-4F684DD24F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29CEA50-F41D-45B3-8F4A-4F684DD24F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29CEA50-F41D-45B3-8F4A-4F684DD24F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8457FB06-C796-431E-A510-B32FB82ED393}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8457FB06-C796-431E-A510-B32FB82ED393}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8457FB06-C796-431E-A510-B32FB82ED393}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8457FB06-C796-431E-A510-B32FB82ED393}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
